@@ -38,3 +38,6 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+#from https://devcenter.heroku.com/articles/getting-started-with-rails4
+gem 'rails_12factor', group: :production
+ruby "1.9.3"
