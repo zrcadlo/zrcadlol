@@ -74,6 +74,6 @@ class AvatarsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def avatar_params
-      params.require(:avatar).permit(:repo)
+      {repo: params[:repo], visage: params[:file]}
     end
 end
