@@ -14,7 +14,7 @@
     <% @avatars.each do |avatar| %>
       <tr>
         <td><%= avatar.repo %></td>
-        <td><%= avatar.visage.url %></td>
+        <td><%= image_tag avatar.visage.url %></td>
         <td><%=l avatar.created_at %></td>
       </tr>
     <% end %>
