@@ -1,2 +1,3 @@
 class Avatar < ActiveRecord::Base
+  has_attached_file :visage, styles: {medium: "300x300>", thumb: "100x100>"}
 end

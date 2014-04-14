@@ -11,12 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140414012752) do
+ActiveRecord::Schema.define(version: 20140414030103) do
 
   create_table "avatars", force: true do |t|
     t.string   "repo"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "visage_file_name"
+    t.string   "visage_content_type"
+    t.integer  "visage_file_size"
+    t.datetime "visage_updated_at"
   end
 
 end

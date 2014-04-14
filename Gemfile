@@ -39,6 +39,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+#
+
+gem 'paperclip'
+gem 'aws-sdk'
 
 #from https://devcenter.heroku.com/articles/getting-started-with-rails4
 gem 'rails_12factor', group: :production
