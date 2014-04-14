@@ -4,7 +4,11 @@ class AvatarsController < ApplicationController
   # GET /avatars
   # GET /avatars.json
   def index
-    @avatars = Avatar.all
+    if params[:secret] == ENV['ZOMG_SECRET']
+      @avatars = Avatar.all
+    else
+      head(418) and return#I'm a teapot!
+    end
   end
 
   # GET /avatars/1
