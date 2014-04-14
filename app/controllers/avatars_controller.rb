@@ -29,6 +29,7 @@ class AvatarsController < ApplicationController
   # POST /avatars.json
   def create
     @avatar = Avatar.new(avatar_params)
+    Rails.logger.info("This was submitted: #{params.inspect}")
 
     respond_to do |format|
       if @avatar.save
